@@ -84,11 +84,31 @@
 //  // console.table ([]) is ke through ap direct sab console kara skte ho
 
 
-//  /*
-// prefer not to use var because of issue in block scope and functional scope
-// const or let use krna hai var use nahi krna
-//  */
+ /*
+ prefer not to use var 
+ because of issue in block scope and functional scope
+ const or let use krna hai var use nahi krna
+ */
 
 
 
 // Topic data types
+
+let name = "rophile" // ye string data type hai
+let age = 19  // ye number data type hai
+let isLoggedIn = false  // ye boolean data type hai
+   
+
+
+// numbers => 2 to power 53
+// BigInt
+// string = ""
+// Boolean => true/false
+// null => Standalone value
+// undefined =>
+// symbol => unique 
+
+// object 
+
+// console.log(typeof undefined); answer undefined
+// console.log(typeof null );     answer object
