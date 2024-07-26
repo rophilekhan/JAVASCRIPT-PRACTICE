@@ -262,3 +262,125 @@
 
 // // console.log(Array.of(score1, score2, score3));
 
+
+
+
+
+
+// topic objects
+
+// thypes of objects
+// objects do tariqo ke hote hein singleton or literals
+
+//object literals
+
+const JsUser = {
+    name: "Rophile",
+    "full name": "Rophile Ahmed Khan",  
+    age : 19,
+    location: "karachi",
+    email: "rophile.khan@gmail.com",
+    isLoggedIn: false,
+
+}
+
+// console.log(JsUser.email);
+// console.log(JsUser["email"]);
+// console.log(JsUser["full name"]);
+
+
+//change object
+
+JsUser.email = "ruffy@xyz.com"
+
+// object ki value ko freeze krna hai to k koi change n karpae uske lie..
+
+// Object.freeze(JsUser)
+
+// function add krna hoto
+
+JsUser.greeting = function() {
+// console.log("heloo js user");
+}
+
+JsUser.greetingTwo = function() {
+    // console.log(`heloo js user ${this["full name"]}`);
+}
+
+
+// console.log(JsUser.greeting());    
+// console.log(JsUser.greetingTwo());
+
+
+
+
+
+
+
+
+// const tinderUser = new Object()     //singleton object hai
+const tinderUser = {}                 // non singleton object
+ 
+
+tinderUser.id = "123abc"
+tinderUser.name = "sammy"
+tinderUser.isLoggedIn = false
+
+
+// console.log(tinderUser);
+
+
+
+const regularUser ={
+    email : "sam@gmail.com",
+    fullname: {
+        userFullname : {
+            firstName : "rophile",
+            lastName : "khan"
+        }
+    }
+}
+
+// console.log(regularUser.fullname.userFullname.firstName);
+
+
+
+const obj1 = {1: "a", 2: "b"}
+const obj2 = {3: "a", 4: "b"}
+const obj4 = {5: "a", 6: "b"}
+
+
+// const obj3 = Object.assign({}, obj1, obj2, obj4)  // join krne k lie y method itna use nahi hoga
+
+const obj3 = {...obj1, ...obj2} // ye wala spread method join krne k lie ziada use hoga
+// console.log(obj3);
+
+
+const users = [
+    {
+        id: 1,
+        email: "h@gmail.com"
+    },
+    {
+        id: 1,
+        email: "h@gmail.com"
+    },
+    {
+        id: 1,
+        email: "h@gmail.com"
+    },
+    {
+        id: 1,
+        email: "h@gmail.com"
+    },
+    {
+        id: 1,
+        email: "h@gmail.com"
+    },
+]
+
+users[1].email
+// console.log(tinderUser);
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
