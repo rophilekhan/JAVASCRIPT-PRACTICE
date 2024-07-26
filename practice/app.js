@@ -384,3 +384,54 @@ users[1].email
 // console.log(Object.keys(tinderUser));
 // console.log(Object.values(tinderUser));
 // console.log(Object.entries(tinderUser));
+
+// console.log(tinderUser.hasOwnProperty(`isLoggedIn`));
+
+
+const course = {
+    courseName: "javascript",
+    coursePrice: "1000",
+    courseTeacher: "Abdullah"
+}
+
+// course.courseTeacher
+
+
+// destructuring method
+const{courseTeacher : teacher} = course
+console.log(teacher);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
